@@ -1,0 +1,341 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /** Reset para REMS - 62.5% = 10px de 16px **/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+img{
+    max-width: 100%;
+}
+.fw-300 {
+    font-weight: 300;
+}
+.centrar-texto {
+    text-align: center;
+}
+.seccion{
+    margin-top: 2rem;
+}
+.d-block {
+    display: block!important;
+}
+.contenedor{
+    width: 95%;
+    max-width: 120rem; /** = 1200px; **/
+    margin: 0 auto;
+}
+h1 {
+    font-size: 3.8rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 2.6rem;
+}
+
+
+/*HEADER*/
+.site-header{
+    background: #333333;
+    padding: 0.5rem 0 0.2rem 0;
+}
+
+.site-header.inicio{
+    background: url(../img/facultad.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 60rem;
+}
+
+.contenido-header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .contenido-header{
+        text-align: left;
+    }
+}
+.contenido-header h1{
+    color: white; 
+    font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+    .contenido-header h1{
+        color: white; 
+        padding-bottom: 2rem;
+        max-width: 80rem;
+        font-size: 4rem;
+        line-height: 2;/*interlineado*/
+    }
+}
+.barra{
+    padding-top: 3rem;
+}
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+/*NAVEGACION*/
+.navegacion a{
+    -webkit-text-stroke: 1px black;
+    color: white; 
+    text-decoration:none;
+    font-size: 2.3rem;
+    font-weight: 700;
+    display: block;
+}
+@media (min-width: 768px) {
+    .navegacion a {
+        display: inline-block;
+        font-size: 2.8rem; 
+        margin-right: 3rem;
+    }
+    .navegacion a:last-of-type {
+        margin: 0;
+    }
+}
+.navegacion a:hover{
+    color: turquoise;
+}
+
+h2{
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+}
+@media (min-width: 768px) {
+    h2{
+        font-size: 5rem;
+    }
+}
+@media (min-width: 768px) {
+    .contenedor-anuncios{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+.anuncio{
+    text-align: center;
+    border:1px solid #b5b5b5;
+    background: #F5F5F5F5;
+    border-radius:0.21rem;
+    margin-bottom: 2rem;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+@media (min-width: 768px) {
+    .anuncio {
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+}
+.contenido-anuncio {
+    padding: 2rem;
+}
+.contenido-anuncio h3, 
+.contenido-anuncio p  {
+    margin: 0;
+}
+.boton{
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    display: block;
+    flex: 0 0 100%;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    border-radius: 3rem;
+    
+}
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+.boton:hover{
+    cursor: pointer;
+}
+
+.boton-amarillo{
+    background-color: #E08709;
+}
+.boton-verde{
+    padding: 1.2rem 5rem;
+    background-color:#71B100;
+}
+.ver-todas{
+    display: flex;
+    justify-content: flex-end;
+}
+.contenido-anuncio{
+    padding: 2rem;
+}
+
+/*FOOTER*/
+.site-footer{
+    background-color: #333333;
+    margin:0 ;
+}
+.copyright{
+    margin: 0;
+    color: white;
+    font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+    .copyright{
+        font-size: 1.9rem;
+    }.boton {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
+.contenedor-footer{
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-contacto{
+    background-image: url(../img/portada.jpg);
+    height: 40rem;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-anuncio h3{
+    text-transform: uppercase;
+    color: black;
+    font-size: 2rem;
+    margin: 0;
+} 
+.contenido-anuncio p{
+    margin: 0;
+    color: black;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.referencia{
+    text-transform: uppercase;
+    margin: 0;
+    font-weight: bold;
+}
+.contenido-contacto{
+    flex: 0 0 95%;
+    color: white;
+}
+.contenido-contacto p{
+    font-size: 1.5rem;
+}
+.contenido-contacto h2{
+    font-size: 2.7rem;
+}
+@media (min-width: 768px) {
+    .contenido-contacto p{
+        font-size: 2.1rem;
+    }
+    .contenido-contacto h2{
+        font-size: 4rem;
+    }
+}
+/*contacto*/
+.contacto p{
+    font-size: 1.6rem;
+    color: #4f4f4f;
+    margin: 2rem 0 0 0;
+}
+
+legend{
+    font-size: 2.1rem;
+    color: #4f4f4f;
+}
+label{
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+input:not([type="submit"]), textarea,
+select{
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    background-color: #E1E1E1;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 1rem;
+}
+input[type="radio"]{
+    width: auto;
+    margin:0;
+}  
+select {
+    -webkit-appearance:none; 
+    appearance: none;
+}
+textarea{
+    height: 20rem;
+}
+
+.forma-contacto{
+    max-width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*NOSOTROS*/
+
+@media (min-width: 768px) {
+    .contenido-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-column-gap: 2rem;
+        padding-bottom: 6rem ;
+    }
+}
+.texto-nosotros blockquote{
+    font-weight: 900;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0 0 2rem 0;
+}
+.contenido-nosotros img{
+    max-width: 100%;
+}
+
+.contenedor-man img{
+    display: block;
+    margin: 6.4rem auto;
+    
+}
